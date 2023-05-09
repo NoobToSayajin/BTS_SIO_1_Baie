@@ -1,5 +1,29 @@
 # Configuration de baie
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Index</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#plan-dadressage">Plan d'adressage</a>
+      <ul>
+        <li><a href="#schema">Schéma</a></li>
+        <li><a href="#table-d-adresses">Table d'adresses</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 ***
 
 > + [Plan d'adressage](#plan-dadressage)
@@ -18,8 +42,12 @@
 
 ## plan d'adressage
 
-![Schéma](.\Img\SchemaBaie.png)
+<a name="schema"></a>
 
+<!-- ![Schéma](.\Img\SchemaBaie.png) -->
+<img src=".\Img\SchemaBaie.png" alt="Schéma">
+
+<a name="table-d-adresses"></a>
 |Device        |        address| CIDR| interface| Relier à:|
 |:-------------|--------------:|----:|---------:|---------:|
 |PFsense       |  192.168.11.80|   24|   em0/WAN|     Nuage|
