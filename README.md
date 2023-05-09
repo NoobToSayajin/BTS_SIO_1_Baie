@@ -2,7 +2,7 @@
 
 <a name="haut-de-page">
 
-<!-- TABLE OF CONTENTS -->
+<!-- INDEX -->
 <details>
   <summary>Index</summary>
   <ol>
@@ -32,7 +32,6 @@
       <a href="#configuration-switch-multi-layer">Switch MultiLayer</a>
       <ul>
         <li><a href="#switch-nviii-vlan-par-port">Switch Niveau III <I>Vlan par port</I></a></li>
-        <li><a href="#switch-nvii-vlan-par-reseau">Switch Niveau II <I>Vlan par reseau</I></a></li>
       </ul>
     </li>
     <li><a href="#configuration-windows-server">Configuration Windows Server</a></li>
@@ -45,7 +44,6 @@
 
 <a name="schema"></a>
 
-<!-- ![Schéma](.\Img\SchemaBaie.png) -->
 <img src=".\Img\SchemaBaie.png" alt="Schéma">
 
 <a name="table-d-adresses"></a>
@@ -59,7 +57,7 @@
 |R2            |       10.0.1.2|   24|   S 0/0/0|        R1|
 |R2            |   192.168.10.1|   24|     G 0/0|    SwML-3|
 |R3            |       10.0.0.2|   24|   S 0/0/0|        R1|
-|R3            |   192.168.20.1|   24|     F 0/0|    Debian|
+|R3            |    192.168.0.1|   24|     F 0/0|    Debian|
 |SwML-3 Vlan 1 |  192.168.10.10|   24|       P 1|        R2|
 |Windows Server| 192.168.10.100|   24|       eth|    SwML-3|
 |Debian        | 192.168.20.100|   24|     Ens33|        R3|
@@ -91,65 +89,44 @@ Switch
 
 ### Router R1
 
-+ hostname: R3
-+ Interface GigaEthernet 0/0
-  + description "Link to Pfsense"
-  + ip address 172.16.0.2 255.255.255.0
-  + ip ant outside
-  + no shutdown
-+ Interface GigaEthernet 0/1
-  + null
-+ Interface Serial 0/0/0
-  + description "Link to R3"
-  + ip address 10.0.0.1 255.255.255.0
-  + ip nat inside
-  + no shutdown
-+ Interface Serial 0/0/1
-  + description "Link to R2"
-  + ip address 10.0.1.1 255.255.255.0
-  + ip nat inside
-  + no shutdown
-+ ip nat inside source list 1 interface GigaEthernet 0/0 overload
-+ access-list 1 permit any
-+ ip route 0.0.0.0 0.0.0.0 172.16.0.1
-+ login
-+ telnet
+<a href=".\Config\Routers\R1.config">R1 commande</a>
+
++ [x] hostname et bannière
++ [x] Configuration DNS
++ Configuration des Interfaces:
+  + [x] GigaEthernet 0/0
+  + [x] Serial 0/0/0
+  + [x] Serial 0/0/1
++ [x] Configuration NAT et ACL
++ [x] Configuration ip route vers PFsense
++ [x] configuration mot de passe et acces telnet
++ [ ] configuration SSH
 
 ### Router R2
 
-+ hostname: R2
-+ Interface GigaEthernet 0/0
-  + description "Link to Switch"
-  + ip address 192.168.10.1 255.255.255.0
-  + no shutdown
-+ Interface GigaEthernet 0/1
-  + null
-+ Interface Serial 0/0/0
-  + description "Link to R1"
-  + ip address 10.0.1.2 255.255.255.0
-  + no shutdown
-+ Interface Serial 0/0/1
-  + null
-+ login
-+ telnet
+<a href=".\Config\Routers\R2.config">R2 commande</a>
+
++ [x] hostname et bannière
++ [x] Configuration DNS
++ Configuration des Interfaces:
+  + [x] GigaEthernet 0/0
+  + [x] Serial 0/0/0
+  + [x] Serial 0/0/1
++ [x] configuration mot de passe et acces telnet
++ [ ] configuration SSH
 
 ### Router R3
 
-+ hostname: R3
-+ Interface FastEthernet 0/0
-  + description "Link to Debian"
-  + ip address 192.168.20.1 255.255.255.0
-  + no shutdown
-+ Interface FastEthernet 0/1
-  + null
-+ Interface Serial 0/0/0
-  + description "Link to R1"
-  + ip address 10.0.0.2 255.255.255.0
-  + no shutdown
-+ Interface Serial 0/0/1
-  + null
-+ login
-+ telnet
+<a href=".\Config\Routers\R3.config">R3 commande</a>
+
++ [x] hostname et bannière
++ [x] Configuration DNS
++ Configuration des Interfaces:
+  + [x] GigaEthernet 0/0
+  + [x] Serial 0/0/0
+  + [x] Serial 0/0/1
++ [x] configuration mot de passe et acces telnet
++ [ ] configuration SSH
 
 <p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
 
@@ -170,8 +147,6 @@ Switch
   + nom: Simon
   + Port range: 14-18
 
-### Switch Nv:II *vlan par reseau*
-
 <p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
 
 ## Configuration Windows Server
@@ -190,7 +165,7 @@ Switch
 
 ## Configuration Debian
 
-+ [x] Addressse IP
++ [ ] Addressse IP
   + IP: 192.168.20.100/24
   + GW: 192.168.20.1
   + VLAN: null
