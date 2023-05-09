@@ -35,7 +35,7 @@
     </li>
     <li><a href="#configuration-windows-server">Configuration Windows Server</a></li>
     <li><a href="#configuration-debian">Configuration Debian</a></li>
-    <li><a href="#création-dunité-dorganisation">#création d'unité d'organisation</a></li>
+    <li><a href="#creation-dunite-dorganisation">#création d'unité d'organisation</a></li>
     <li><a href="#configuration-gpo">Configuration GPO</a></li>
   </ol>
 </details>
@@ -194,7 +194,7 @@ Switch
 
 <p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
 
-## Création d'unité d'organisation
+## Creation d'unite d'organisation
 
 <p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
 
