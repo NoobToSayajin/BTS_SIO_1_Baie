@@ -1,5 +1,7 @@
 # Configuration de baie
 
+<a name="top">
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Index</summary>
@@ -17,11 +19,25 @@
         <li><a href="#table-d-adresses">Table d'adresses</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#configuration-pfsense">Configuration Pfsense</a></li>
+    <li>
+      <a href="#configuration-router">Configuration routers</a>
+      <ul>
+        <li><a href="#router-r1">Router R1</a></li>
+        <li><a href="#router-r2">Router R2</a></li>
+        <li><a href="#router-r3">Router R3</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#configuration-switch-multi-layer">Switch MultiLayer</a>
+      <ul>
+        <li><a href="#switch-nviii-vlan-par-port">Switch Niveau III <I>Vlan par port</I></a></li>
+        <li><a href="#switch-nvii-vlan-par-reseau">Switch Niveau II <I>Vlan par reseau</I></a></li>
+      </ul>
+    </li>
+    <li><a href="#configuration-windows-server">Configuration Windows Server</a></li>
+    <li><a href="#configuration-debian">Configuration Debian</a></li>
+    <li><a href="#configuration-pc-client">Configuration PC client</a></li>
   </ol>
 </details>
 ***
@@ -188,7 +204,7 @@ Switch
   + [ ] OCS
   + [ ] Connexion LDAP
 
-## PC Client
+## Configuration PC Client
 
 ### PC 1
 
