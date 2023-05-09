@@ -65,10 +65,10 @@
 Switch
 |Address         |  Port|    Vlan|nom Vlan|
 |:---------------|-----:|-------:|-------:|
-|192.168.10.10   |      |  Vlan 1|   Admin|
-|                |   4-8| Vlan 10|  Hacene|
-|                |  9-13| Vlan 20|  Julien|
-|                | 14-18| Vlan 30|   Simon|
+|192.168.0.0/24  |      |  Vlan 1|   Admin|
+|192.168.10.0/24 |   4-8| Vlan 10|  Hacene|
+|192.168.20.0/24 |  9-13| Vlan 20|  Julien|
+|192.168.30.0/24 | 14-18| Vlan 30|   Simon|
 
 <p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
 
@@ -134,16 +134,16 @@ Switch
 
 ### Switch Nv:III *vlan par port*
 
-+ encapsulation dot1q
-+ Vlan 1
-  + ip: 192.168.10.10 /24
-+ Vlan 10
+<a href=".\Config\Switch\SwML.config">Switch commande</a>
+
++ [ ] Vlan 1: Administration
++ [ ] Vlan 10
   + nom: Hacene
   + Port range: 4-8
-+ Vlan 20
++ [ ] Vlan 20
   + nom: Julien
   + Port range: 9-13
-+ Vlan 30
++ [ ] Vlan 30
   + nom: Simon
   + Port range: 14-18
 
