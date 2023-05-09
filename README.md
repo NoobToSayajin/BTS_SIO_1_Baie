@@ -35,7 +35,7 @@
     </li>
     <li><a href="#configuration-windows-server">Configuration Windows Server</a></li>
     <li><a href="#configuration-debian">Configuration Debian</a></li>
-    <li><a href="#creation-dunite-dorganisation">#création d'unité d'organisation</a></li>
+    <li><a href="#creation-dunite-dorganisation">création d'unité d'organisation</a></li>
     <li><a href="#configuration-gpo">Configuration GPO</a></li>
   </ol>
 </details>
