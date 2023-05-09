@@ -1,6 +1,6 @@
 # Configuration de baie
 
-<a name="top">
+<a name="haut-de-page">
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -40,21 +40,6 @@
     <li><a href="#configuration-pc-client">Configuration PC client</a></li>
   </ol>
 </details>
-***
-
-> + [Plan d'adressage](#plan-dadressage)
-> + [Configuration PFsense](#configuration-pfsense)
-> + [Configuration Router](#configuration-router)
->   + [Router R1](#router-r1)
->   + [Router R2](#router-r2)
->   + [Router R3](#router-r3)
-> + [Switch MultiLayer](#configuration-switch-multi-layer)
->   + [Switch Niveau III *Vlan par port*](#switch-nviii-vlan-par-port)
->   + [Switch Niveau II *Vlan par reseau*](#switch-nvii-vlan-par-reseau)
-> + [Configuration Windows Server](#configuration-windows-server)
-> + [Configuration Debian](#configuration-debian)
-
-***
 
 ## plan d'adressage
 
@@ -87,6 +72,8 @@ Switch
 |                |  9-13| Vlan 20|  Julien|
 |                | 14-18| Vlan 30|   Simon|
 
+<p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
+
 ## Configuration PFsense
 
 + WAN
@@ -97,6 +84,8 @@ Switch
   + interface: em1
   + IP: 172.16.0.1 /24
   + DHCP: null
+
+<p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
 
 ## Configuration Router
 
@@ -162,6 +151,8 @@ Switch
 + login
 + telnet
 
+<p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
+
 ## Configuration Switch Multi Layer
 
 ### Switch Nv:III *vlan par port*
@@ -181,6 +172,8 @@ Switch
 
 ### Switch Nv:II *vlan par reseau*
 
+<p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
+
 ## Configuration Windows Server
 
 + [x] Adresse IP
@@ -193,6 +186,8 @@ Switch
 + [ ] Creation d'OU
 + [ ] Creation de GPO
 
+<p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
+
 ## Configuration Debian
 
 + [x] Addressse IP
@@ -203,6 +198,8 @@ Switch
   + [ ] GLPI // PHP Version
   + [ ] OCS
   + [ ] Connexion LDAP
+
+<p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
 
 ## Configuration PC Client
 
