@@ -57,6 +57,9 @@
 > **R2**
 > - ACL
 
+> **Switch**
+> - adressage Vlan
+
 ## plan d'adressage
 
 <a name="schema"></a>
