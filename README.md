@@ -2,14 +2,13 @@
 
 <a name="haut-de-page">
 
-<!-- INDEX -->
 <details>
   <summary>Index</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#Roadmap">Roadmap</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#TODO">TODO</a></li>
       </ul>
     </li>
     <li>
@@ -36,9 +35,27 @@
     </li>
     <li><a href="#configuration-windows-server">Configuration Windows Server</a></li>
     <li><a href="#configuration-debian">Configuration Debian</a></li>
-    <li><a href="#configuration-pc-client">Configuration PC client</a></li>
+    <li><a href="#création-dunité-dorganisation">#création d'unité d'organisation</a></li>
+    <li><a href="#configuration-gpo">Configuration GPO</a></li>
   </ol>
 </details>
+
+## Roadmap
+
+### TODO
+
+>   **Debian**
+> - Configuration Debian
+> - Installation GLPI/OCS
+> - Configuration GLPI/OCS
+> - Configuration LDAP
+
+> **Windows Server**
+> - Configuration OU
+> - Configuration GPO
+
+> **R2**
+> - ACL
 
 ## plan d'adressage
 
@@ -47,6 +64,7 @@
 <img src=".\Img\SchemaBaie.png" alt="Schéma">
 
 <a name="table-d-adresses"></a>
+
 |Device        |        address| CIDR| interface| Relier à:|
 |:-------------|--------------:|----:|---------:|---------:|
 |PFsense       |  192.168.11.80|   24|   em0/WAN|     Nuage|
@@ -63,9 +81,10 @@
 |Debian        | 192.168.20.100|   24|     Ens33|        R3|
 
 Switch
+
 |Address         |  Port|    Vlan|nom Vlan|
 |:---------------|-----:|-------:|-------:|
-|192.168.0.0/24  |      |  Vlan 1|   Admin|
+|192.168.1.0/24  |      |  Vlan 1|   Admin|
 |192.168.10.0/24 |   4-8| Vlan 10|  Hacene|
 |192.168.20.0/24 |  9-13| Vlan 20|  Julien|
 |192.168.30.0/24 | 14-18| Vlan 30|   Simon|
@@ -168,7 +187,6 @@ Switch
 + [ ] Addressse IP
   + IP: 192.168.20.100/24
   + GW: 192.168.20.1
-  + VLAN: null
 + Server GLPI/OCS
   + [ ] GLPI // PHP Version
   + [ ] OCS
@@ -176,10 +194,11 @@ Switch
 
 <p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
 
-## Configuration PC Client
+## Création d'unité d'organisation
 
-### PC 1
+<p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
 
-### PC 2
+## Configuration GPO
 
-### PC 3
+
+<p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
