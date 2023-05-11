@@ -203,5 +203,4 @@ Switch
 
 ## Configuration GPO
 
-
 <p align="right">(<a href="#haut-de-page">Haut de page</a>)</p>
